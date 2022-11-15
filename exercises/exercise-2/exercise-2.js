@@ -1,4 +1,4 @@
-let hogwarts = [
+let  hogwarts= [
   {
     firstName: "Harry",
     lastName: "Potter",
@@ -70,3 +70,21 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+let [firstName,lastName,house,pet,occupation] = hogwarts;
+let fullname = [] ;
+for(key of hogwarts){
+  if(key.house == "Gryffindor"){
+    fullname.push(`${key.firstName} ${key.lastName}`);
+  }
+}
+  console.log(`${fullname}`);
+ 
+ 
+let TeachersName= [];
+for(key of hogwarts){
+  if(key.occupation ==="Techer" && Key.pet ==! null){
+   TeachersName.push(`${key.firstName} ${key.lastName}`);
+  }
+}
+console.log(`${TeachersName}`);
